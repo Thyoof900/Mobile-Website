@@ -1,0 +1,39 @@
+.page {
+    display: grid;
+    gap: 1rem;
+    grid-template-areas:
+    "header"
+    "main"
+    "aside"
+    "footer";
+}
+
+.site-header {
+    grid-area: header;
+    background-color: blue;
+}
+
+.site-main {
+    grid-area: main;
+    background-color: red;
+}
+
+.site-aside {
+    grid-area: aside;
+    background-color: green;
+}
+
+.site-footer {
+    grid-area: footer;
+    background-color: yellow;
+}
+
+/* @media (min-width: 1240px) {
+    .page {
+        grid-template-columns: (2fr, 1fr);
+        grid-template-areas:
+        "header header"
+        "main aside"
+        "footer footer";
+    }
+} */
