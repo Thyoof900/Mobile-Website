@@ -34,6 +34,11 @@
     background-color: yellow;
 }
 
+img {
+    height: 100%;
+    width: 100%;
+}
+
 @media (min-width: 1024px) {
     .page {
         grid-template-columns: 1fr 3fr 1fr;
@@ -50,7 +55,7 @@
     }
 
     .product-card img{
+        height: 100%;
         width: 100%;
-        height: auto;
     }
 }
