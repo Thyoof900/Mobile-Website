@@ -5,6 +5,7 @@
     "header"
     "main"
     "aside"
+    "aside-right"
     "footer";
 }
 
@@ -18,8 +19,13 @@
     background-color: red;
 }
 
-.site-aside {
+.site-aside-left {
     grid-area: aside;
+    background-color: lightgreen;
+}
+
+.site-aside-right {
+    grid-area: aside-right;
     background-color: green;
 }
 
@@ -28,12 +34,23 @@
     background-color: yellow;
 }
 
-/* @media (min-width: 1240px) {
+@media (min-width: 1024px) {
     .page {
-        grid-template-columns: (2fr, 1fr);
+        grid-template-columns: 1fr 3fr 1fr;
         grid-template-areas:
-        "header header"
-        "main aside"
-        "footer footer";
+        "header header header"
+        "aside main aside-right"
+        "footer footer footer";
     }
-} */
+
+    .product {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .product-card img{
+        width: 100%;
+        height: auto;
+    }
+}
