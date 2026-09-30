@@ -43,7 +43,7 @@
         "footer footer footer";
     }
 
-    .product {
+    .products {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
